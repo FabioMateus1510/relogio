@@ -22,6 +22,12 @@ setInterval(() => {
   segundos.textContent = s;
 });
 
+function updateGradient() {
+  body.style.background =
+    'linear-gradient(90deg, ' + color1.value + ', ' + color2.value + ')';
+  body.style.setProperty('background-size', '250% 250%');
+}
+
 function stopGradient() {
   value = value === '250% 250%' ? '100% 100%' : '250% 250%';
   body.style.backgroundSize = value;
