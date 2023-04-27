@@ -3,14 +3,11 @@
 Este é um projeto de relógio digital que utiliza HTML, CSS e JavaScript para exibir as horas, minutos e segundos em um formato de 24 horas. A aplicação é responsiva e apresenta uma animação que altera a cor do fundo.
 
 <img src= relogio2.png>
+https://fabiomateus1510.github.io/relogio/
 
 ## Funcionamento
 
 O relógio digital é atualizado em tempo real utilizando a função setInterval() do JavaScript. A animação de mudança de cor do fundo é realizada através de uma transição CSS.
-
-# Instruções de Uso
-
-Para utilizar o relógio digital, basta abrir o arquivo index.html em qualquer navegador web.
 
 # Personalização
 
