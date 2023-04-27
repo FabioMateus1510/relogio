@@ -1,8 +1,13 @@
+const relogio = document.querySelector('.relogio');
 const horas = document.querySelector('.horas');
 const minutos = document.querySelector('.minutos');
 const segundos = document.querySelector('.segundos');
+const body = document.querySelector('body');
+const color1 = document.getElementById('color1');
+const color2 = document.getElementById('color2');
+let value = '250% 250%';
 
-const relogio = setInterval(function time() {
+setInterval(() => {
   let dateToday = new Date();
   let hr = dateToday.getHours();
   let min = dateToday.getMinutes();
@@ -15,4 +20,21 @@ const relogio = setInterval(function time() {
   horas.textContent = hr;
   minutos.textContent = min;
   segundos.textContent = s;
+});
+
+function stopGradient() {
+  value = value === '250% 250%' ? '100% 100%' : '250% 250%';
+  body.style.backgroundSize = value;
+}
+
+color1.addEventListener('input', function () {
+  updateGradient();
+});
+
+color2.addEventListener('input', function () {
+  updateGradient();
+});
+
+relogio.addEventListener('click', function () {
+  stopGradient();
 });

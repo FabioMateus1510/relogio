@@ -6,12 +6,17 @@
   font-family: 'Open Sans' sans-serif;
 }
 
+:root {
+  --color1: #29fee6;
+  --color2: #002fa6;
+}
+
 body {
   height: 100vh;
-  background: linear-gradient(120deg, rgb(41, 254, 230), rgb(0, 47, 166));
+  background: linear-gradient(90deg, var(--color1), var(--color2));
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   background-size: 250% 250%;
   animation: gradient 12s linear infinite;
 }
@@ -29,6 +34,7 @@ body {
 }
 
 .relogio {
+  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -36,20 +42,20 @@ body {
   width: 40%;
   background: transparent;
   border-radius: 0px 35px;
-  box-shadow: 0px 0px 16px 12px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.4);
 }
 
 .relogio div {
-  height: 70%;
-  width: 24%;
+  height: 68%;
+  width: 25%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   color: #fff;
-  background-color: rgba(30, 30, 61, 0.76);
-  box-shadow: 0px 0px 3px 0.69vw rgba(0, 0, 0, 0.2),
-    0px 0px 4px 0.5vw rgba(0, 0, 0, 0.2), 0px 0px 3px 6px rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.112);
+  box-shadow: 0px 0px 1px 0.69vw rgba(0, 0, 0, 0.2),
+    0px 0px 4px 0.5vw rgba(0, 0, 0, 0.15), 0px 0px 3px 6px rgba(0, 0, 0, 0.1);
   border-radius: 0px 25px;
   letter-spacing: 3px;
 }
@@ -63,10 +69,25 @@ body {
   font-size: 0.8vw;
 }
 
-.relogio span:empty {
-  color: transparent;
+input[type='color'] {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  width: 60px;
+  height: 100%;
+  border: none;
+  cursor: pointer;
+  margin: 0;
+  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.8);
 }
 
-.relogio span:empty {
-  mix-blend-mode: difference;
+input[type='color']:hover {
+  opacity: 0.3;
+}
+
+input[type='color']::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+input[type='color']::-webkit-color-swatch {
+  border: none;
 }
