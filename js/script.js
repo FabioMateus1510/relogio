@@ -5,7 +5,7 @@ const segundos = document.querySelector('.segundos');
 const body = document.querySelector('body');
 const color1 = document.getElementById('color1');
 const color2 = document.getElementById('color2');
-let value = '250% 250%';
+let value = '100% 100%';
 
 setInterval(() => {
   let dateToday = new Date();
