@@ -7,7 +7,7 @@ https://fabiomateus1510.github.io/relogio/
 
 ## Funcionamento
 
-O relógio digital é atualizado em tempo real utilizando a função setInterval() do JavaScript. A animação de mudança de cor do fundo é realizada através de uma transição CSS.
+O relógio digital é atualizado em tempo real utilizando a função setInterval() do JavaScript. Para que a animação do background se inicie, basta clicar em cima do relogio.
 
 # Personalização
 

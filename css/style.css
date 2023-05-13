@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
 
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Open Sans' sans-serif;
+  font-family: 'Orbitron', sans-serif;
 }
 
 :root {
@@ -46,33 +46,26 @@ body {
   gap: 2%;
 }
 
-.relogio div {
-  transition: border-radius 0.5s ease-in-out;
+.numero-container {
   height: 66.5%;
   width: 24.5%;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   color: #fff;
-  background-color: rgba(0, 0, 0, 0.112);
+  background-color: rgba(0, 0, 0, 0.1);
   box-shadow: 0px 0px 1px 0.89vw rgba(0, 0, 0, 0.2),
     0px 0px 6px 0.65vw rgba(0, 0, 0, 0.15), 0px 0px 6px 7px rgba(0, 0, 0, 0.1);
   /* border-radius: 0px 25px; */
-  letter-spacing: 3px;
+  letter-spacing: 8px;
 }
 
-.relogio span {
+.numero {
   font-weight: bolder;
-  font-size: 5vw;
+  font-size: 4vw;
 }
 
-.relogio span.tempo {
-  display: none;
-  font-size: 1vw;
-}
-
-input[type='color'] {
+.color-bar {
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
   width: 60px;
@@ -83,14 +76,29 @@ input[type='color'] {
   box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.8);
 }
 
-input[type='color']:hover {
+.color-bar:hover {
   opacity: 0.3;
 }
 
-input[type='color']::-webkit-color-swatch-wrapper {
-  padding: 0;
+.color-bar::-webkit-color-swatch-wrapper {
+  padding: 0px;
 }
 
-input[type='color']::-webkit-color-swatch {
+.color-bar::-webkit-color-swatch {
+  border: none;
+}
+
+/* Firefox */
+.color-bar::-moz-color-swatch {
+  border: none;
+}
+
+/* Internet Explorer / Edge */
+.color-bar::-ms-color-swatch {
+  border: none;
+}
+
+/* Opera */
+.color-bar::-o-color-swatch {
   border: none;
 }
