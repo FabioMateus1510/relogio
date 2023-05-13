@@ -2,6 +2,8 @@
 
 Este é um projeto de relógio digital que utiliza HTML, CSS e JavaScript para exibir as horas, minutos e segundos em um formato de 24 horas. A aplicação é responsiva e apresenta uma animação que altera a cor do fundo.
 
+<img src= relogio.png>
+https://fabiomateus1510.github.io/relogio/
 <img src= relogio2.png>
 https://fabiomateus1510.github.io/relogio/
 
